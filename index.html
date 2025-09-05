@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gasy Miray - Communauté Crypto Malagasy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a2540;
+      --secondary: #00b3b3;
+      --accent: #ff6b35;
+      --light: #f5f9ff;
+      --dark: #1a1a2e;
+      --gradient: linear-gradient(135deg, var(--secondary), var(--accent));
+    }
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body {background:var(--light);color:var(--dark);line-height:1.6;}
+    h1,h2,h3 {font-family:'Montserrat',sans-serif;}
+    /* HEADER */
+    header {
+      position:fixed;top:0;width:100%;background:rgba(10,37,64,0.95);
+      color:white;padding:1rem 0;z-index:1000;backdrop-filter:blur(8px);
+      box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    }
+    .header-content {display:flex;justify-content:space-between;align-items:center;width:90%;margin:auto;}
+    .logo {display:flex;align-items:center;gap:10px;}
+    .logo-text {font-size:1.5rem;font-weight:700;background:var(--gradient);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+    nav ul {display:flex;list-style:none;}
+    nav ul li {margin-left:1.5rem;}
+    nav ul li a {color:white;text-decoration:none;transition:.3s;}
+    nav ul li a:hover {color:var(--secondary);}
+    /* HERO */
+    .hero {
+      padding:10rem 2rem 6rem;text-align:center;background:linear-gradient(rgba(10,37,64,0.9),rgba(10,37,64,0.8));
+      color:white;
+    }
+    .hero h1 {font-size:2.8rem;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+    .hero p {max-width:600px;margin:1rem auto 2rem;font-size:1.2rem;color:#ddd;}
+    .btn {
+      display:inline-block;padding:1rem 2rem;border-radius:30px;font-weight:600;
+      text-decoration:none;color:white;background:var(--gradient);transition:.3s;
+    }
+    .btn:hover {transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+    /* TICKER */
+    .crypto-ticker {background:var(--gradient);color:white;overflow:hidden;padding:.6rem 0;}
+    .ticker-content {display:flex;animation:ticker 25s linear infinite;white-space:nowrap;}
+    .ticker-item {margin-right:2.5rem;}
+    @keyframes ticker {0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+    /* ABOUT */
+    .about {padding:5rem 2rem;text-align:center;}
+    .about h2 {font-size:2rem;margin-bottom:1rem;color:var(--primary);}
+    .about p {max-width:700px;margin:auto;color:#444;}
+    /* FOOTER */
+    footer {background:var(--dark);color:#aaa;padding:2rem;text-align:center;margin-top:3rem;}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <div class="logo"><i class="fas fa-users"></i><span class="logo-text">Gasy Miray</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Fandraisana</a></li>
+          <li><a href="links.html">Asa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>G.M</h1>
+    <p>Miarahaba anao tongasoa! Ity site ity dia natao hanampiana anao ahita ireo asa en ligne vaovao izay ahazoana vola gratuit.<br> Ity moa dia mbola eo andalam-pivoarana ary ho avy tsy ela ny "version finale" ary vinavinaina ho vita amin'ny faran'ny taona 2025. </p>
+    <a href="links.html" class="btn">🚀 Hijery ireo asa azo atao.</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>Momba anay.</h2>
+    <p>Izahay dia mpitrandraka cryptomonnaie en ligne ary ny tanjonay dia ny hanampy anao hahafehy izany ary mba hiaraka hitrandraka aminay.</p>
+  </section>
+  
+  <!-- Antoka -->
+  <section class="about">
+    <h2>Azo antoka ve?</h2>
+    <p>Ny atolotra ato dia izay asa azo antoka sy rentable ihany.</p>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Gasy Miray - Tous droits réservés
+  </footer>
+</body>
+</html>
